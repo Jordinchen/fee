@@ -8,16 +8,18 @@ if(!(isset($_GET['page'])) or (isset($_GET['page']) && $_GET['page'] == "index")
 } else { 
 	if(isset($_GET['page']) && $_GET['page'] == "catale") {
 		include("katalanisch.php");
-	} else {
-		echo "<div class=\"container runter\">\n";
-		echo "	<div class=\"row\">\n";
-		echo "		<div class=\"col-sm-3\">\n";
-		echo "		</div>\n";
-		echo "		<div class=\"col-sm-9\">\n";
-		echo "			<h1>Kein Inhalt verfügbar</h1>\n";
-		echo "		</div>\n";
-		echo "	</div>\n";
-		echo "</div>\n";
+	} else { 
+?>
+		<div class="container runter">
+			<div class="row">
+				<div class="col-sm-3">
+				</div>
+				<div class="col-sm-9">
+					<h1>Kein Inhalt verfügbar</h1>
+				</div>
+			</div>
+		</div>
+<?php
 	}
 }
 ?>
