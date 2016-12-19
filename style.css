@@ -1,0 +1,82 @@
+.jumbotron {
+	background-color: #ff9933;
+	color: #ffffff;
+	padding: 100px 25px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #ff9933;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #ff9933 !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+span.navbar-toggle {
+	color: #fff !important;
+
+}
+
+.runter {
+	margin-top: 80px;
+}
+
+ul.dropdown-menu {
+	background-color: #ff9933;
+}
+
+a.list-group-item:hover {
+	color: #ff9933;
+}
+
+a.aktiv, a.aktiv:hover {
+	background-color: #ff9933;
+	color: #ffffff;
+}
+
+.label-sub {
+	background-color: #8080ff;
+}
+
+.label-v {
+	background-color: #ff9999;
+}
+
+.label-adj {
+	background-color: #9fdf9f;
+}
+
+.k-wort {
+	color: #ff9933;
+	font-weight: bold;
+}
+
+.ipa {
+	font-family: monospace;
+}
+
+.btn-verb, .btn-verb:hover {
+	background-color: #ff9999;
+	color: #fff;
+}
+
+.modal {
+	margin-top: 100px;
+}
