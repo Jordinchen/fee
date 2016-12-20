@@ -18,7 +18,7 @@ class Database
 	/**
 	 * Constructor
 	 * Initiliazing class members
-	 * @param $database_ A database
+,	 * @param $database_ A database
 	 * @param $host_ A host address
 	 * @param $username_ A database username
 	 * @param $password_ Matching database password
@@ -55,7 +55,8 @@ class Database
 				"mysql:host=" . $this->_host . 
 				";dbname=" . $this->_database,
 				$this->_username,
-				$this->_password
+				$this->_password,
+				array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8')
 			); 
 		}
 		catch(PDOException $error) {
