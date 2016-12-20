@@ -15,6 +15,7 @@ require_once('./inc/config.php');
 
 // Initiliaze necessary variables
 $baseLanguage = "katalanisch";
+$_GET["topic"] = (isset($_GET["topic"])) ? $_GET["topic"] : "";
 $topic = ($_GET["topic"] != "") ? $_GET["topic"] : "";
 
 // Topics in $baseLanguage
@@ -38,7 +39,7 @@ $myTopics = array(
 );
 
 // Check which topic is active
-foreach($aTopic in $myTopics) {
+foreach($myTopics as $aTopic) {
 	if($topic == $aTopic['short'])
 		$aTopic['active'] == true;
 }
