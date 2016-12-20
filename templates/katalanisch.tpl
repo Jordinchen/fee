@@ -1,3 +1,4 @@
+{include file="header.tpl"}
 <div class="container runter">
 	<div class="row">
 		{include file="menu_topics.tpl"}
@@ -15,3 +16,4 @@
 		</div>
 	</div>
 </div>
+{include file="footer.tpl"}
