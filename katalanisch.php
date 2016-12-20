@@ -21,27 +21,27 @@ $topic = ($_GET["topic"] != "") ? $_GET["topic"] : "";
 // Topics in $baseLanguage
 // NOTE: A database table 'topics' would be far better. ~Yuserys
 $myTopics = array(
-	'kalendar' 	=> array(
+	'cal' 	=> array(
 		'short' 	=> "cal",
 		'name' 		=> "Kalendar",
-		'active' 	=> false,
+		'active' 	=> "",
 	),
-	'schule' 	=> array(
+	'edu' 	=> array(
 		'short'		=> "edu",
 		'name'		=> "Schule und Ausbildung",
-		'active'	=> false,
+		'active'	=> "",
 	),
-	'religion'	=> array(
+	'rel'	=> array(
 		'short'		=> "rel",
 		'name'		=> "Religion",
-		'active'	=> false,
+		'active'	=> "",
 	),
 );
 
 // Check which topic is active
 foreach($myTopics as $aTopic) {
 	if($topic == $aTopic['short'])
-		$aTopic['active'] == true;
+		$myTopics[$topic]['active'] = "aktiv";
 }
 
 // Assign variables
