@@ -10,8 +10,8 @@ $tpl = new Smarty;
 
 // Include necessary configuration files
 require_once('./classes/Database.class.php');
-require_once('./classes/Wortschatz.class.php');
 require_once('./inc/config.php');
+require_once('./inc/funktionen.php');
 
 // Initiliaze necessary variables
 $baseLanguage = "katalanisch";
@@ -51,13 +51,21 @@ $query = $db->connection()->prepare(
 		ORDER BY k_wort ASC"
 );
 $query->execute(array($topic));
-$query->setFetchMode(PDO::FETCH_ASSOC);
-$words = $query->fetch();
-print_r($words); // Test
+
+// Parse vorfeld and wortart
+for($i = 0; $rows = $query->fetch(PDO::FETCH_ASSOC); $i++) {
+	$words[$i] = $rows;
+	$words[$i]['k_vorfeld_ps'] = vorfeld($words[$i]['k_vorfeld']);
+	$words[$i]['d_vorfeld_ps'] = vorfeld($words[$i]['d_vorfeld']);
+	$words[$i]['k_wortart_ps'] = wortart_parser($words[$i]['k_wortart']);
+	$words[$i]['k_wortart_ps_lc'] = strtolower($words[$i]['k_wortart_ps']);
+}
 
 // Assign variables
 $tpl->assign('baseLang', $baseLanguage);
 $tpl->assign('myTopics', $myTopics);
+$tpl->assign('topic', $topic);
+$tpl->assign('words', $words);
 
 // Load template
 $tpl->display('katalanisch.tpl');
