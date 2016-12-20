@@ -8,11 +8,6 @@
 require_once('./smarty/libs/Smarty.class.php');
 $tpl = new Smarty;
 
-// Include necessary configuration files
-require_once('./classes/Database.class.php');
-require_once('./classes/Wortschatz.class.php');
-require_once('./inc/config.php');
-
 // Display template
 $tpl->display('index.tpl');
 ?>
