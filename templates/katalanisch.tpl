@@ -32,7 +32,7 @@
 			-->
 		</td>
 		<td>
-			{$word.d_vorfeld_ps}{$word.d_word}
+			{$word.d_vorfeld_ps}{$word.d_wort}
 		</td>
 	</tr>
 {/foreach}
