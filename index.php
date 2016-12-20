@@ -1,6 +1,16 @@
 <?php 
+/**
+ * @author Jordinchen, Kevin Sporbeck
+ * @version 20.12.2016
+ */
+
+// Include necessary files
+require_once("./classes/Database.class.php");
+require_once("./inc/config.php");
+
+
+/**************/
 include_once("funktionen.php");
-include("konfiguration.php");
 include("header.php");
 include("nav.php");
 if(!(isset($_GET['page'])) or (isset($_GET['page']) && $_GET['page'] == "index")) {
