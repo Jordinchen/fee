@@ -1,4 +1,4 @@
- <nav class="navbar navbar-dark navbar-fixed-top" style="margin-bottom: 80px;">
+ <nav class="navbar navbar-dark navbar-fixed-top">
 	<div class="container">
 		<div class="navbar-header">
 			<span class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
