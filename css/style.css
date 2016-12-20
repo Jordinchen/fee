@@ -26,6 +26,7 @@
     background-color: #fff;
 }
 
+
 .navbar-toggle {
     border-color: transparent;
     color: #ff9933;
@@ -43,8 +44,9 @@ a.list-group-item:hover {
 	color: #ff9933;
 }
 
-a.aktiv, a.aktiv:hover {
+a.aktiv, a.aktiv:hover, a.aktiv:focus {
 	background-color: #ff9933;
+	color: #fff;
 }
 
 .label-sub {
