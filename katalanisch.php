@@ -44,6 +44,17 @@ foreach($myTopics as $aTopic) {
 		$myTopics[$topic]['active'] = "aktiv";
 }
 
+// Select all words of that topic
+$query = $db->connection()->prepare(
+	"SELECT * FROM wliste 
+		WHERE bereich = ?
+		ORDER BY k_wort ASC"
+);
+$query->execute(array($topic));
+$query->setFetchMode(PDO::FETCH_ASSOC);
+$words = $query->fetch();
+print_r($words); // Test
+
 // Assign variables
 $tpl->assign('baseLang', $baseLanguage);
 $tpl->assign('myTopics', $myTopics);
