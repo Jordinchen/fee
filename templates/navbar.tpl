@@ -11,9 +11,9 @@
 				<li class="dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#">vocabulari<span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="?page=catale">català</a></li>
-						<li><a href="?page=hebale">hebreu</a></li>
-						<li><a href="?page=japale">japonès</a></li>
+						<li><a href="./katalanisch.php">català</a></li>
+						<li><a href="#">hebreu</a></li>
+						<li><a href="#">japonès</a></li>
 					</ul>
 				</li>
 				<li><a href="#">lingüístiques</a></li>
