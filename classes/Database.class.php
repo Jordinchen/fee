@@ -18,7 +18,7 @@ class Database
 	/**
 	 * Constructor
 	 * Initiliazing class members
-,	 * @param $database_ A database
+	 * @param $database_ A database
 	 * @param $host_ A host address
 	 * @param $username_ A database username
 	 * @param $password_ Matching database password
