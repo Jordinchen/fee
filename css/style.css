@@ -15,7 +15,8 @@
     border-radius: 0;
 }
 
-.navbar li a, .navbar .navbar-brand {
+.navbar li a, 
+.navbar .navbar-brand {
     color: #fff;
 }
 
@@ -26,10 +27,22 @@
     background-color: #fff;
 }
 
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+	background-color: #fff;
+}
+
 
 .navbar-toggle {
     border-color: transparent;
-    color: #ff9933;
+    color: #fff;
+}
+
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+	background-color: #fff;
+	color: #f93;
 }
 
 .runter {
@@ -44,7 +57,9 @@ a.list-group-item:hover {
 	color: #ff9933;
 }
 
-a.aktiv, a.aktiv:hover, a.aktiv:focus {
+a.aktiv, 
+a.aktiv:hover, 
+a.aktiv:focus {
 	background-color: #ff9933;
 	color: #fff;
 }
@@ -70,7 +85,8 @@ a.aktiv, a.aktiv:hover, a.aktiv:focus {
 	font-family: monospace;
 }
 
-.btn-verb, .btn-verb:hover {
+.btn-verb, 
+.btn-verb:hover {
 	background-color: #ff9999;
 	color: #fff;
 }
