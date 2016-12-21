@@ -1,11 +1,11 @@
 <!-- Modal -->
-<div id="konjugation_{$row.k_wort}" class="modal fade" role="dialog">
+<div id="konjugation_{$word.k_wort}" class="modal fade" role="dialog">
 	<div class="modal-dialog modal-lg">
 	<!-- Modal content-->
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<h4 class="modal-title">Konjugation von {$row.k_wort}</h4>
+				<h4 class="modal-title">Konjugation von {$word.k_wort}</h4>
 			</div>
 			<div class="modal-body">
 
@@ -24,12 +24,12 @@
 	<tbody>
 	<tr>
 		<td>Unpersönliche Formen</td>
-		<td>{$row_verb.infinitiv}</td>
-		<td>{$row_verb.gerundi}</td>
-		<td>{$row_verb.parti_1}</td>
-		<td>{$row_verb.parti_2}</td>
-		<td>{$row_verb.parti_3}</td>
-		<td>{$row_verb.parti_4}</td>
+		<td>{$word.conj.infinitiv}</td>
+		<td>{$word.conj.gerundi}</td>
+		<td>{$word.conj.parti_1}</td>
+		<td>{$word.conj.parti_2}</td>
+		<td>{$word.conj.parti_3}</td>
+		<td>{$word.conj.parti_4}</td>
 	</tr>
 	</tbody>
 	<thead>
@@ -46,69 +46,69 @@
 	<tbody>
 	<tr>
 		<td>Präsens</td>
-		<td>{$row_verb.pres_1}</td>
-		<td>{$row_verb.pres_2}</td>
-		<td>{$row_verb.pres_3}</td>
-		<td>{$row_verb.pres_4}</td>
-		<td>{$row_verb.pres_5}</td>
-		<td>{$row_verb.pres_6}</td>
+		<td>{$word.conj.pres_1}</td>
+		<td>{$word.conj.pres_2}</td>
+		<td>{$word.conj.pres_3}</td>
+		<td>{$word.conj.pres_4}</td>
+		<td>{$word.conj.pres_5}</td>
+		<td>{$word.conj.pres_6}</td>
 	</tr>
 	<tr>
 		<td>Imperfekt</td>
-		<td>{$row_verb.imp_1}</td>
-		<td>{$row_verb.imp_2}</td>
-		<td>{$row_verb.imp_3}</td>
-		<td>{$row_verb.imp_4}</td>
-		<td>{$row_verb.imp_5}</td>
-		<td>{$row_verb.imp_6}</td>
+		<td>{$word.conj.imp_1}</td>
+		<td>{$word.conj.imp_2}</td>
+		<td>{$word.conj.imp_3}</td>
+		<td>{$word.conj.imp_4}</td>
+		<td>{$word.conj.imp_5}</td>
+		<td>{$word.conj.imp_6}</td>
 	</tr>
 	<tr>
 		<td>Präteritum</td>
-		<td>{$row_verb.pret_1}</td>
-		<td>{$row_verb.pret_2}</td>
-		<td>{$row_verb.pret_3}</td>
-		<td>{$row_verb.pret_4}</td>
-		<td>{$row_verb.pret_5}</td>
-		<td>{$row_verb.pret_6}</td>
+		<td>{$word.conj.pret_1}</td>
+		<td>{$word.conj.pret_2}</td>
+		<td>{$word.conj.pret_3}</td>
+		<td>{$word.conj.pret_4}</td>
+		<td>{$word.conj.pret_5}</td>
+		<td>{$word.conj.pret_6}</td>
 	</tr>
 	<tr>
 		<td>Futur</td>
-		<td>{$row_verb.fut_1}</td>
-		<td>{$row_verb.fut_2}</td>
-		<td>{$row_verb.fut_3}</td>
-		<td>{$row_verb.fut_4}</td>
-		<td>{$row_verb.fut_5}</td>
-		<td>{$row_verb.fut_6}</td>
+		<td>{$word.conj.fut_1}</td>
+		<td>{$word.conj.fut_2}</td>
+		<td>{$word.conj.fut_3}</td>
+		<td>{$word.conj.fut_4}</td>
+		<td>{$word.conj.fut_5}</td>
+		<td>{$word.conj.fut_6}</td>
 	</tr>
 	<tr>
 		<td>Konditional</td>
-		<td>{$row_verb.con_1}</td>
-		<td>{$row_verb.con_2}</td>
-		<td>{$row_verb.con_3}</td>
-		<td>{$row_verb.con_4}</td>
-		<td>{$row_verb.con_5}</td>
-		<td>{$row_verb.con_6}</td>
+		<td>{$word.conj.con_1}</td>
+		<td>{$word.conj.con_2}</td>
+		<td>{$word.conj.con_3}</td>
+		<td>{$word.conj.con_4}</td>
+		<td>{$word.conj.con_5}</td>
+		<td>{$word.conj.con_6}</td>
 	</tr>
 	<tr>
 		<td colspan="7"></td>
 	</tr>
 	<tr>
 		<td>Präsens Subjunktiv</td>
-		<td>{$row_verb.spres_1}</td>
-		<td>{$row_verb.spres_2}</td>
-		<td>{$row_verb.spres_3}</td>
-		<td>{$row_verb.spres_4}</td>
-		<td>{$row_verb.spres_5}</td>
-		<td>{$row_verb.spres_6}</td>
+		<td>{$word.conj.spres_1}</td>
+		<td>{$word.conj.spres_2}</td>
+		<td>{$word.conj.spres_3}</td>
+		<td>{$word.conj.spres_4}</td>
+		<td>{$word.conj.spres_5}</td>
+		<td>{$word.conj.spres_6}</td>
 	</tr>
 	<tr>
 		<td>Imperfekt Subjunktiv</td>
-		<td>{$row_verb.simp_1}</td>
-		<td>{$row_verb.simp_2}</td>
-		<td>{$row_verb.simp_3}</td>
-		<td>{$row_verb.simp_4}</td>
-		<td>{$row_verb.simp_5}</td>
-		<td>{$row_verb.simp_6}</td>
+		<td>{$word.conj.simp_1}</td>
+		<td>{$word.conj.simp_2}</td>
+		<td>{$word.conj.simp_3}</td>
+		<td>{$word.conj.simp_4}</td>
+		<td>{$word.conj.simp_5}</td>
+		<td>{$word.conj.simp_6}</td>
 	</tr>
 	<tr>
 		<td colspan="7"></td>
@@ -116,11 +116,11 @@
 	<tr>
 		<td>Imperativ</td>
 		<td>—</td>
-		<td>{$row_verb.impa_2}</td>
-		<td>{$row_verb.impa_3}</td>
-		<td>{$row_verb.impa_4}</td>
-		<td>{$row_verb.impa_5}</td>
-		<td>{$row_verb.impa_6}</td>
+		<td>{$word.conj.impa_2}</td>
+		<td>{$word.conj.impa_3}</td>
+		<td>{$word.conj.impa_4}</td>
+		<td>{$word.conj.impa_5}</td>
+		<td>{$word.conj.impa_6}</td>
 	</tr>
 	</tbody>
 </table>
