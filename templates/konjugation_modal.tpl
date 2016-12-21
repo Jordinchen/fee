@@ -8,7 +8,7 @@
 				<h4 class="modal-title">Konjugation von {$word.k_wort}</h4>
 			</div>
 			<div class="modal-body">
-
+<div class="table-responsive">
 <table class="table table-striped">
 	<thead>
 	<tr>
@@ -124,6 +124,7 @@
 	</tr>
 	</tbody>
 </table>
+</div>
 
 			</div>
 			<div class="modal-footer">
