@@ -1,7 +1,7 @@
 <?php
 /**
  * @author Jordinchen, Kevin Sporbeck
- * @version 20.12.2016
+ * @version 21.12.2016
  */
 
 // Include Smarty
@@ -55,21 +55,32 @@ if($topic != "") {
 
 	// Parse vorfeld and wortart
 	for($i = 0; $rows = $query->fetch(PDO::FETCH_ASSOC); $i++) {
+		// Parse
 		$words[$i] = $rows;
 		$words[$i]['k_vorfeld_ps'] = Wortschatz::vorfeld($words[$i]['k_vorfeld']);
 		$words[$i]['d_vorfeld_ps'] = Wortschatz::vorfeld($words[$i]['d_vorfeld']);
 		$words[$i]['k_wortart_ps'] = Wortschatz::wortart_parser($words[$i]['k_wortart']);
 		$words[$i]['k_wortart_ps_lc'] = strtolower($words[$i]['k_wortart_ps']);
+
+		// Get conjugated forms
+		$query2 = $db->connection()->prepare(
+			"SELECT * FROM wverb
+				WHERE infinitiv = ?"
+		);
+		$query2->execute(array($words[$i]['k_wort']));
+
+		// Push into $words
+		$words[$i]['conj'] = $query2->fetch(PDO::FETCH_ASSOC);
 	}
+
+	// Assign variables
+	$tpl->assign('words', $words);
 }
-else 
-	$words = NULL;
 
 // Assign variables
 $tpl->assign('baseLang', $baseLanguage);
 $tpl->assign('myTopics', $myTopics);
 $tpl->assign('topic', $topic);
-$tpl->assign('words', $words);
 
 // Load template
 $tpl->display('katalanisch.tpl');
