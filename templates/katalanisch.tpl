@@ -23,13 +23,16 @@
 			{$word.k_vorfeld_ps} 
 			<span class="k-wort">{$word.k_wort} {$word.k_nachfeld}</span>
 			<span class="label label-{$word.k_wortart_ps_lc}">{$word.k_wortart_ps}</span>
-			<!--
-				Konjugation / Button
-			-->
+			{if $word.k_wortart eq 3 and $word.k_wort eq $word.conj.infinitiv}
+				<span class="label label-{$word.k_wortart_ps_lc}" data-toggle="modal" 
+					data-target="#konjugation_{$word.k_wort}">
+					<span class="fa fa-fw fa-plus"></span>
+				</span>
+			{/if}
 			<br /><span class="ipa">[{$word.k_ipa}]</span>
-			<!--
-				Konjugation / Modal
-			-->
+			{if $word.k_wortart eq 3 and $word.k_wort eq $word.conj.infinitiv}
+				{include file="konjugation_modal.tpl"}
+			{/if}
 		</td>
 		<td>
 			{$word.d_vorfeld_ps}{$word.d_wort}
