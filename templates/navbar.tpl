@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="navbar-header">
 			<span class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-				<span class="glyphicon glyphicon-menu-hamburger"></span>
+				<span class="fa fa-lg fa-bars"></span>
 			</span>
 			<a class="navbar-brand" href="index.php">voc.cat</a>
 		</div>
